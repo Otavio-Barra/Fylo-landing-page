@@ -204,7 +204,7 @@ button:hover {
   opacity: 0.8;
 }
 @media (max-width: 900px) {
-  .flex-display {
+  main .flex-display {
     flex-direction: column;
   }
   .sub-title,
