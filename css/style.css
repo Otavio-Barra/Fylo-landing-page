@@ -15,17 +15,29 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 14px;
-  font-family: "Raleway", sans-serif; /*Headings, Call-to-actions, Header Navigation*/
+  /*Headings, Call-to-actions, Header Navigation*/
   text-decoration: none;
 }
 body {
   font-family: "Open Sans", sans-serif; /*body*/
-  background-color: var(--dark-blue-main-background);
+  color: var(--white);
+  background: var(--dark-blue-email-background);
+}
+
+main {
+  background: var(--dark-blue-main-background);
+}
+.bg-blue {
+  background: var(--dark-blue-email-background)
+    url(../images/bg-curvy-desktop.svg) no-repeat bottom;
+
+  background-size: contain;
 }
 
 .container {
   width: min(80vw, 1440px);
   margin: 0 auto;
+  position: relative;
 }
 
 .flex-display {
@@ -33,9 +45,19 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 0;
-  gap: 2rem;
+  gap: 5vw;
 }
-main section:nth-child(1).flex-display {
+.grid-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 5vw;
+  padding: 4rem 0;
+}
+
+section div:nth-child(1).flex-display {
   flex-direction: column;
 }
 
@@ -44,6 +66,7 @@ header nav {
   gap: clamp(2rem, 3vw, 4rem);
   list-style: none;
   align-items: center;
+  font-family: "Raleway", sans-serif;
 }
 .link-menu {
   color: var(--white);
@@ -71,9 +94,156 @@ header .container-logo img {
   width: clamp(4rem, 20vw, 12rem);
 }
 
+.container-img img {
+  width: 110%;
+  margin-bottom: 2rem;
+}
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  margin-bottom: 2rem;
+  padding: 0 14vw;
+}
+.sub-title {
+  font-size: clamp(1.3rem, 2vw, 2.8rem);
+  padding: 0 15vw 0 0;
+  margin: 2rem 0;
+}
+.text-productive {
+  padding: 0 4vw 0 0;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+.text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 0 21vw;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+button {
+  width: 20rem;
+  padding: 1rem 0;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(64deg, #65e2d9 0%, #339ecc 100%);
+  border: none;
+  color: var(--white);
+  font-weight: 700;
+}
+button:hover {
+  filter: brightness(1.2);
+}
+.cards {
+  text-align: center;
+  max-width: 350px;
+}
+.cards .title-card {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+.productive-img {
+  width: 50%;
+}
+.link-works {
+  color: var(--cyan);
+  border-bottom: solid 1px var(--cyan);
+  padding-bottom: 4px;
+  transition: all 0.2s ease;
+}
+.link-works svg {
+  vertical-align: middle;
+}
+.link-works:hover {
+  color: var(--white);
+  border-bottom: solid 1px var(--white);
+  padding-bottom: 7px;
+}
+.link-works:hover svg use {
+  fill: var(--white);
+}
+.decoration {
+  position: absolute;
+  top: 7%;
+  left: -2%;
+}
+
+.depoiments {
+  z-index: 1;
+  background-color: var(--dark-blue-testimonials-background);
+  padding: 2rem;
+  -webkit-box-shadow: 3px 3px 0 3px var(--dark-blue-email-background);
+  -moz-box-shadow: 3px 3px 0 3px var(--dark-blue-email-background);
+  box-shadow: 3px 3px 0 3px var(--dark-blue-email-background);
+}
+.depoiments .text-depoiment {
+  font-size: 1.1rem;
+}
+.depoiments .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+.depoiments .user .img-user img {
+  border-radius: 100%;
+  width: 2rem;
+}
+.depoiments .user .name {
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  opacity: 1;
+}
+.depoiments .user p {
+  font-size: 0.65rem;
+  opacity: 0.8;
+}
+@media (max-width: 900px) {
+  .flex-display {
+    flex-direction: column;
+  }
+  .sub-title,
+  .text-productive,
+  .text,
+  .title {
+    padding: 0;
+  }
+  .productive-img {
+    width: 100%;
+  }
+  .grid-display {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    gap: 5vw;
+  }
+  .decoration {
+    position: absolute;
+    top: 3%;
+    left: -3%;
+  }
+}
+
 @media (max-width: 768px) {
   .container-img,
   .container-img img {
     width: 100%;
+  }
+
+  .title,
+  .text {
+    padding: 0;
+  }
+  .bg-blue {
+    background: var(--dark-blue-email-background)
+      url(../images/bg-curvy-mobile.svg) no-repeat bottom;
+    background-size: contain;
   }
 }
