@@ -281,7 +281,7 @@ footer .footer-row2 .social-icons i {
   color: var(--white);
   border: solid white 1px;
   padding: 10px;
-  border-radius: 100%;
+  border-radius: 50%;
   margin: 0;
   transition: all 0.2s ease-in-out;
 }
