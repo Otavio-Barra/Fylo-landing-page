@@ -1,0 +1,50 @@
+.title {
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  margin-bottom: 2rem;
+  padding: 0 14vw;
+}
+
+.sub-title {
+  font-size: clamp(1.2rem, 2.8vw, 2.8rem);
+  padding-right: 35%;
+  margin: 2rem 0;
+}
+
+.text-productive {
+  padding: 0 4vw 0 0;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 0 21vw;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.text-depoiment {
+  font-size: 1.1rem;
+}
+
+.depoiments .user .name {
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  opacity: 1;
+}
+.depoiments .user p {
+  font-size: 0.65rem;
+  opacity: 0.8;
+}
+
+.banner-email h2 {
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  margin-bottom: 2rem;
+}
+.banner-email p {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: 400;
+  margin-bottom: 2rem;
+}

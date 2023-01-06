@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-decoration: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+  background: var(--dark-blue-email-background);
+}
+
+main {
+  background: var(--dark-blue-main-background);
+}
