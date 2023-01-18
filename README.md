@@ -2,7 +2,7 @@
 
 ### Link para vizualização
 
-<a href="https://profound-blancmange-d52729.netlify.app/" target="_blank">Fylo landing page</a>
+<a href="https://strong-sawine-aac850.netlify.app/" target="_blank">Fylo landing page</a>
 
 ### Contatos
 
